@@ -1,10 +1,3 @@
-/*
-* Copyright (c) 2023, University of California; Santa Barbara
-* Distribution prohibited. All rights reserved.
-*
-* File: ucsbece152a_ssdd.sv
-* Description: Starter file for seven-segment display decoder.
-*/
 module ucsbece152a_ssdd (
 	input logic [2:0] data_i,
 	output logic [6:0] seven_segment_display_o
@@ -23,4 +16,5 @@ always_comb begin
 	endcase
 end
 
-endmodule
+endmodule
+

@@ -1,4 +1,4 @@
-module ucsbece152a_counter #(
+module counter #(
 	parameter WIDTH = 3
 ) (
 	input logic clk,

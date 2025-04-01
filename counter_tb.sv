@@ -1,11 +1,4 @@
-/*
-* Copyright (c) 2023, University of California; Santa Barbara
-* Distribution prohibited. All rights reserved.
-*
-* File: ucsbece152a_counter_tb.sv
-* Description: Starter file for counter testbench.
-*/
-module ucsbece152a_counter_tb();
+module counter_tb();
 
 // Parameters
 parameter WIDTH = 3;
@@ -21,7 +14,7 @@ logic enable_i;
 logic dir_i;
 
 // Instantiate the "Design Under Test"
-ucsbece152a_counter #(
+counter #(
 	.WIDTH(WIDTH)
 ) DUT (
 	.clk(clk),
@@ -78,4 +71,4 @@ dir_i = 1'b0;
 $display( "End simulation.");
 $stop;
 end
-endmodule
+endmodule
